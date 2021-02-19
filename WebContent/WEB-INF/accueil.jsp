@@ -19,7 +19,7 @@
 
 		<ul>
 
-			<li><a href="ServletEncheres">Enchères de ${utilisateur.pseudo}</a></li>
+			<li><a href="ServletEncheres">Enchères</a></li>
 			<li><a href="ServletVendreArticle">Vendre un article</a></li>
 			<li><a href="ServletConnexion">se connecter</a></li>
 			<li><a href="ServletSinscrire">s'inscrire</a></li>
@@ -31,7 +31,7 @@
 			<li><a href="ServletAccueil">Déconnexion</a></li> -->	
 				
 			
-		<%//String pseudo = (String) request.getAttribute("id"); out.println(pseudo);%> 
+		
     		
 			
 
@@ -44,13 +44,12 @@
 	<h1>ENI-Enchères</h1>
 
 	<h2>Liste des enchères</h2>
-	
 
+<p>SALUT ${pseudo}</p>
 
+<%String pseudo = (String)request.getAttribute("pseudo"); out.println(pseudo);%> 
 	<br>
 	<form>
-	
-
 
 		<div>
 		

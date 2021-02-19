@@ -22,10 +22,6 @@ public class ServletAccueilConnecte extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
-		Utilisateur utilisateur = new Utilisateur();// test
-		request.setAttribute("pseudo", utilisateur);// test
-		
 		this.getServletContext().getRequestDispatcher(ACCUEIL_CONNECTE).forward( request, response );
 	}
 
