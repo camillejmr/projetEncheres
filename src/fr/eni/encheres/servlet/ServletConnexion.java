@@ -51,16 +51,14 @@ public class ServletConnexion extends HttpServlet {
             } else {
                 rd = request.getRequestDispatcher("/WEB-INF/erreurAuthentification.jsp");
                 rd.forward(request, response);
-        } }
+            	} 
+            }
             catch (BusinessException ex) {
             // TODO Auto-generated catch block
             ex.printStackTrace();
         }
 
-       
-
         }
         
-
 	}
 

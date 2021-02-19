@@ -28,10 +28,10 @@
 		<p class="succes">Bonjour!! : ${sessionScope.sessionUtilisateur.pseudo}</p>
 		</c:if>
 			<li><a href="ServletMonProfil">Mon profil</a></li>
-			<li><a href="ServletAccueil">Déconnexion</a></li>
+			<li><a href="ServletAccueil">Déconnexion</a></li> -->	
 				
 			
-		<!--<%String pseudo = (String) request.getAttribute("id"); out.println(pseudo);%> -->	
+		<%//String pseudo = (String) request.getAttribute("id"); out.println(pseudo);%> 
     		
 			
 
@@ -66,7 +66,7 @@
 			<span><input type="radio"  name="achats" />Ventes</span>
 
 			<span class="checkbox"><input type="checkbox" id="checkbox"> Enchères ouvertes</span> <span class="checkbox"><input
-				type="checkbox" id="checkbox"> Mes Ventes en cours</span> <span class="checkbox"><input
+				type="checkbox" id="checkbox"> Mes ventes en cours</span> <span class="checkbox"><input
 				type="checkbox" > Mes enchères en cours</span> <span class="checkbox"><input
 				type="checkbox" class="checkbox"> Ventes non débutées</span> <span class="checkbox"><input
 				type="checkbox" class="checkbox"> Mes enchères remportées</span> <span class="checkbox"><input
@@ -86,7 +86,7 @@
 			<span><input type="radio"  name="achats" />Ventes</span>
 
 			<span class="checkbox"><input type="checkbox" id="checkbox"> Enchères ouvertes</span> <span class="checkbox"><input
-				type="checkbox" id="checkbox"> Mes Ventes en cours</span> <span class="checkbox"><input
+				type="checkbox" id="checkbox"> Mes ventes en cours</span> <span class="checkbox"><input
 				type="checkbox" > Mes enchères en cours</span> <span class="checkbox"><input
 				type="checkbox" class="checkbox"> Ventes non débutées</span> <span class="checkbox"><input
 				type="checkbox" class="checkbox"> Mes enchères remportées</span> <span class="checkbox"><input
