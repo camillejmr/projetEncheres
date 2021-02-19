@@ -65,7 +65,7 @@ public class ServletSinscrire extends HttpServlet {
 				
 			Utilisateur utilisateur=utilisateurManager.ajoutUtilisateur(mdp, pseudo, nom, prenom, mail, telephone, rue, codePostal, city);
 			
-			
+			request.setAttribute("Test", utilisateur);
 			
 			//Si tout se passe bien, je vais vers la page d'accueil
 			 rd = request.getRequestDispatcher("/WEB-INF/accueil.jsp");
