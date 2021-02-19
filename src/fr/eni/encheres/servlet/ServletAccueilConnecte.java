@@ -7,6 +7,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import fr.eni.encheres.bo.Utilisateur;
+
 /**
  * Servlet implementation class ServletAccueilConnecte
  */
@@ -14,12 +16,14 @@ import javax.servlet.http.HttpServletResponse;
 public class ServletAccueilConnecte extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
-	public static final String ACCUEIL_CONNECTE="/WEB-INF/accueilConnecte.jsp";
+	public static final String ACCUEIL_CONNECTE="/WEB-INF/accueil.jsp";
        
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		Utilisateur utilisateur = new Utilisateur();
+		request.setAttribute("pseudo", utilisateur);
 		this.getServletContext().getRequestDispatcher(ACCUEIL_CONNECTE).forward( request, response );
 	}
 

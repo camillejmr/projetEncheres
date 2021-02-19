@@ -19,7 +19,7 @@
 
 		<ul>
 
-			<li><a href="ServletEncheres">Enchères</a></li>
+			<li><a href="ServletEncheres">Enchères de ${utilisateur.pseudo}</a></li>
 			<li><a href="ServletVendreArticle">Vendre un article</a></li>
 			<li><a href="ServletConnexion">se connecter</a></li>
 			<li><a href="ServletSinscrire">s'inscrire</a></li>
