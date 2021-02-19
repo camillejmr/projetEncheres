@@ -63,7 +63,7 @@ public class ServletSinscrire extends HttpServlet {
 		UtilisateurManager utilisateurManager = new UtilisateurManager();
 		try {
 				
-			Utilisateur utilisateur=utilisateurManager.ajoutUtilisateur(mdp, pseudo, nom, prenom, mail, telephone, rue, codePostal, city);
+			Utilisateur utilisateur =utilisateurManager.ajoutUtilisateur(mdp, pseudo, nom, prenom, mail, telephone, rue, codePostal, city);
 			
 			request.setAttribute("Test", utilisateur);
 			

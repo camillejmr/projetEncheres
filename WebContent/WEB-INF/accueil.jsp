@@ -19,17 +19,19 @@
 
 		<ul>
 
-			<li><a href="ServletEncheres">Enchères</a></li>
+			<li><a href="ServletEncheres">Enchères de ${utilisateur.pseudo}</a></li>
 			<li><a href="ServletVendreArticle">Vendre un article</a></li>
 			<li><a href="ServletConnexion">se connecter</a></li>
 			<li><a href="ServletSinscrire">s'inscrire</a></li>
 			
-		<!-- <c:if test="${!empty sessionScope.sessionUtilisateur}">
-		<%-- Si l'utilisateur existe en session, alors on affiche son pseudo. --%>
-			<p class="succes">Bonjour!! : ${sessionScope.sessionUtilisateur.pseudo}</p>
-			</c:if> -->		
+		<!--<c:if test="${!empty sessionScope.sessionUtilisateur}">
+		<p class="succes">Bonjour!! : ${sessionScope.sessionUtilisateur.pseudo}</p>
+		</c:if>
+			<li><a href="ServletMonProfil">Mon profil</a></li>
+			<li><a href="ServletAccueil">Déconnexion</a></li> -->	
+				
 			
-		<!--<%String pseudo = (String) request.getAttribute("id"); out.println(pseudo);%> -->	
+		<%//String pseudo = (String) request.getAttribute("id"); out.println(pseudo);%> 
     		
 			
 
@@ -64,7 +66,7 @@
 			<span><input type="radio"  name="achats" />Ventes</span>
 
 			<span class="checkbox"><input type="checkbox" id="checkbox"> Enchères ouvertes</span> <span class="checkbox"><input
-				type="checkbox" id="checkbox"> Mes Ventes en cours</span> <span class="checkbox"><input
+				type="checkbox" id="checkbox"> Mes ventes en cours</span> <span class="checkbox"><input
 				type="checkbox" > Mes enchères en cours</span> <span class="checkbox"><input
 				type="checkbox" class="checkbox"> Ventes non débutées</span> <span class="checkbox"><input
 				type="checkbox" class="checkbox"> Mes enchères remportées</span> <span class="checkbox"><input
@@ -84,7 +86,7 @@
 			<span><input type="radio"  name="achats" />Ventes</span>
 
 			<span class="checkbox"><input type="checkbox" id="checkbox"> Enchères ouvertes</span> <span class="checkbox"><input
-				type="checkbox" id="checkbox"> Mes Ventes en cours</span> <span class="checkbox"><input
+				type="checkbox" id="checkbox"> Mes ventes en cours</span> <span class="checkbox"><input
 				type="checkbox" > Mes enchères en cours</span> <span class="checkbox"><input
 				type="checkbox" class="checkbox"> Ventes non débutées</span> <span class="checkbox"><input
 				type="checkbox" class="checkbox"> Mes enchères remportées</span> <span class="checkbox"><input
